@@ -130,7 +130,7 @@ function Uploader() {
       style={{
         marginTop: "auto",
         backgroundColor: "#e0e7ff",
-        padding: "8px",
+        padding: "2px",
         borderRadius: "5px",
         textAlign: "center",
         display: "flex",
@@ -138,14 +138,12 @@ function Uploader() {
         gap: "8px",
       }}
     >
-      <h3>SAMPLE DATA</h3>
-
-      <Button onClick={uploadAll} disabled={isLoading}>
-        Upload ALL
-      </Button>
-
-      <Button onClick={uploadBookings} disabled={isLoading}>
-        Upload bookings ONLY
+      <Button
+        onClick={uploadAll}
+        disabled={isLoading}
+        title="Click on this to reload the latest data "
+      >
+        SEED DATA
       </Button>
     </div>
   );
